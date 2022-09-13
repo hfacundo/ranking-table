@@ -4,7 +4,7 @@
 
 * Description: Command-line application that will calculate the ranking table for a league
 * Version: 0.0.1-SNAPSHOT
-* Branch: main
+* Branch: master
 
 ### Generate jar ###
 
