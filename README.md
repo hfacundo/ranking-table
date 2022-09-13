@@ -1,29 +1,26 @@
-# README #
+### ranking-table-cli ###
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Repository ###
 
-### What is this repository for? ###
+* Description: Command-line application that will calculate the ranking table for a league
+* Version: 0.0.1-SNAPSHOT
+* Branch: main
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Generate jar ###
 
-### How do I get set up? ###
+* Clone the project to local
+* Navigate to project
+* Run terminal or command line and run:
+  - mvn clean install
+  - mvn clean package
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Run tests ###
 
-### Contribution guidelines ###
+* From your terminal or command line run:
+  - mvn test
 
-* Writing tests
-* Code review
-* Other guidelines
+### Test cli ###
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Once -mvn clean package is run:
+* Navigate to ranking-table-cli.jar location and run:
+  - java -jar ranking-table-cli.jar
