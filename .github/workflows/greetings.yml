@@ -15,3 +15,8 @@ jobs:
 
     - name: Imprimir Hola Mundo
       run: echo "Hola, mundo"
+      
+    - name: Guardar variable como secret
+      run: echo "MY_SECRET_VALUE" | tr -d '\n' | gh secrets set MY_SECRET -
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
