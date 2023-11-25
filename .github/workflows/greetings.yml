@@ -25,6 +25,10 @@ jobs:
         echo "value of my second var: ${{ env.MY_SECOND_VAR }}"
         echo ""
         OUTPUT_CK_SA_CLIENT_ID="key123"
+        echo "variable $OUTPUT_CK_SA_CLIENT_ID"
         echo "OUTPUT_CK_SA_CLIENT_ID=$OUTPUT_CK_SA_CLIENT_ID" >> $GITHUB_ENV 
         echo "OUTPUT_CK_SA_CLIENT_ID: ${{ env.OUTPUT_CK_SA_CLIENT_ID }}"
+
+    - name: Imprimir Hola Mundo 2
+      run: echo "Hola, mundo2 ${{ env.OUTPUT_CK_SA_CLIENT_ID }}"
       
