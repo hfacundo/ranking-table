@@ -1,0 +1,17 @@
+name: Hola Mundo Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v2
+
+    - name: Imprimir Hola Mundo
+      run: echo "Hola, mundo"
