@@ -19,5 +19,8 @@ jobs:
     - name: Guardar variable como secret
       run: |
         echo "value of secret: ${{ secrets.MY_SECRET }}"
-        ENV_JSON='${{ secrets.MY_SECRET }}'
-        echo "$ENV_JSON" | jq -r 'to_entries[] | "\(.key)=\(.value)"' >> $GITHUB_ENV
+        OUTPUT_CK_SA_CLIENT_ID="value of var"
+        echo "MY_SECOND_VAR=THIS IS THE VALUE" >> $GITHUB_ENV
+        echo "value of output var: $OUTPUT_CK_SA_CLIENT_ID"
+        echo "value of my second var: ${{ env.MY_SECOND_VAR }}"
+      
